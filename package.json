@@ -1,0 +1,26 @@
+{
+  "name": "dulcAyuda",
+  "version": "0.1.0",
+  "description": "",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "dulceAyuda.js",
+  "scripts": {
+    "start": "node dulceAyuda.js"
+  },
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nerione/dulceAyuda"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
