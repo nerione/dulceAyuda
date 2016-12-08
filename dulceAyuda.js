@@ -10,6 +10,11 @@ var express = require('express');
 var app = express();
 var dulceAyuda = express();
 
+// when on Heroku, port will be exported to an environment variable
+// and available as process.env.PORT
+var port = process.env.PORT || CONFIG.port;
+
+
 app.use(bodyParser());
 //contenido estatico
 app.use(express.static('public'));
@@ -26,6 +31,6 @@ app.get('/', function(req,res){
 	});
 });
 
-app.listen(3030, function(req, res){
+app.listen(port, function(req, res){
 	console.log('\n Aplicación levantada correctamente en el puerto 3030... \n Neri Sánche Lozano \n Version 1.0.0');
 });
